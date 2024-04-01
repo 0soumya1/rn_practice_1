@@ -14,18 +14,19 @@ export type RootStackParamsList={
 }
 
 const Stack = createStackNavigator<RootStackParamsList>()
+// const Stack = createStackNavigator()
 
 const AppNavigator = () => {
   return (
-   <View>
-    <Text>gfhhjhjkhhkj</Text>
-   </View>
-  //  <NavigationContainer>
-  //   <Stack.Navigator>
-  //     <Stack.Screen name="Home" component={Home} />
-  //     <Stack.Screen name="Settings" component={Settings}/>
-  //   </Stack.Navigator>
-  //  </NavigationContainer>
+  //  <View>
+  //   <Text>gfhhjhjkhhkj</Text>
+  //  </View>
+   <NavigationContainer>
+    <Stack.Navigator >
+      <Stack.Screen name="Home" component={Home} options={{headerShown: true}} />
+      <Stack.Screen name="Settings" component={Settings}/>
+    </Stack.Navigator>
+   </NavigationContainer>
   )
 }
 

@@ -1,8 +1,9 @@
 import { View, Text } from 'react-native'
 import React from 'react'
-import TypeScriptComp from './TypeScriptComp'
-import AppNavigator from './AppNavigator'
-import Products from './Products'
+import TypeScriptComp from './TsxComponent/TypeScriptComp'
+import AppNavigator from './Navigation/AppNavigator'
+import Products from './TsxFlatlist/Products'
+import Main from './TsxReduxToolkit/Main'
 
 const App = () => {
   return (
@@ -10,7 +11,8 @@ const App = () => {
       {/* <Text>App</Text> */}
       {/* <TypeScriptComp/> */}
       {/* <AppNavigator/> */}
-      <Products/>
+      {/* <Products/> */}
+      <Main/>
     </View>
   )
 }

@@ -26,12 +26,12 @@ const Home = ({navigation}: HomeScreenProps) => {
     const [items, setItems] = useState<Items[]>([])  // array
     const [details, setDetails] = useState<null>(null)  // null
 
-    const ref = useRef<TextInput>(null)
+    // const ref = useRef<TextInput>(null)
     
   return (
     <View>
 
-        <TextInput ref={ref}/>
+        {/* <TextInput ref={ref}/> */}
 
       <Text style={{padding: 10, borderWidth: 1, color:"black"}}
       onPress={()=>{

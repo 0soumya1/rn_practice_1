@@ -1,7 +1,7 @@
 import { View, Text } from 'react-native'    //rnfe
 import React from 'react'
-import ClassComp from './ClassComp'
 import FunctionalComp from './FunctionalComp'
+import ClassComp from './ClassComp'
 
 const TypeScriptComp = () => {
   return (
